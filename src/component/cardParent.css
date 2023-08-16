@@ -1,0 +1,80 @@
+ .card{
+    top: 30%;
+    left: 25%;
+    width: 50%;
+    height: 75%;
+    border-radius: 20px;
+  }
+.hereimage{
+    background-image: url("../images/Capture-2.PNG");
+    background-repeat: no-repeat;
+    background-size: cover;
+width:45%;
+height: 93%;
+position: absolute;
+top: 0;
+right: 0;
+border-radius: 10px;
+  }
+.CheckCircleIcon {
+  color:orangered!important ;
+}
+@media (max-width: 390px) {
+.sss{
+  position: absolute;
+  bottom: 10%;
+ margin-top: 20px;
+}
+  .card{
+
+   width: 390px;
+   height: 844px;
+     position: relative;
+   left: 0;
+   top: 0;
+
+  }
+  .hereimage{
+display: none;
+  }
+  .sss::before{
+    content:'';
+    position: absolute;
+    background-image: url("../images/Capture-2.PNG");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 390px;
+    height: 400px;
+    top: -100%;
+    border-bottom-left-radius:20px ;
+    border-bottom-right-radius:20px ;
+  }
+}
+@media(min-width :395px ) {
+.card {
+  width: 625px !important;
+
+   margin-bottom: 20px !important;
+ 
+
+}
+.sss {
+  width: 360px !important;
+}
+.hereimage{
+  width: 280px !important;
+}
+}
+@media(max-height :840px){
+  .card {
+    
+  height: 542px !important;
+  }
+}
+@media(height :844px){
+  .card {
+    
+  height: 844px !important;
+
+  }
+}

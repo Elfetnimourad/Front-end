@@ -1,0 +1,32 @@
+.thanks-body {
+    background-color: rgba(54,56,77,1) !important;
+    height: 120vh;
+}
+.here {
+    position: absolute;
+    z-index: 2;
+    top: 30%;
+    left: 35%;
+    width: 30%;
+    height: 60%;
+    border-radius: 20px;
+}
+.dismiss {
+    margin: 0;
+  display: flex;
+  justify-content: center!important ;
+  align-items: center !important ;
+}
+.CheckCircleIconStyle {
+    color:orangered!important ;
+    margin-bottom: 15px;
+    height: 50px !important;
+    width: 50px !important;
+  }
+  .btnDismiss {
+    width: 350px;
+    background-color: rgba(54,56,77,1) !important ;
+    color: white;
+    height: 50px;
+    border-radius: 10px;
+  }
