@@ -7,6 +7,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { CardParent } from "./component/CardParent";
 import { Thanks } from "./component/Thanks";
 import { Form } from "./component/Form";
+import { Switch } from "react-router-dom";
 
 function App() {
   return (

@@ -10,7 +10,7 @@ import { Link, useNavigate } from "react-router-dom";
 import { Thanks } from "./Thanks";
 
 import CheckCircleIcon from "@mui/icons-material/CheckCircle";
-
+// export const UserContext = createContext();
 export const Form = () => {
   const [user, setUser] = useState("");
   const [error, setError] = useState("");

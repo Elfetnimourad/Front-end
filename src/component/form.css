@@ -20,3 +20,9 @@ input{
 @media (min-width : 400px ) {
    
 }
+/* .thanksUser{
+    display: none !important;
+    position: absolute;
+    left: 254%;
+    z-index: 0;
+} */
