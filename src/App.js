@@ -8,11 +8,13 @@ import { CardParent } from "./component/CardParent";
 import { Thanks } from "./component/Thanks";
 import { Form } from "./component/Form";
 import { Switch } from "react-router-dom";
+import { TodoList } from "./pages/TodoList";
 
 function App() {
   return (
     <Routes>
       <Route path="/" element={<CardParent />} />
+      npm
       <Route path="/thanks" element={<Thanks />} />
     </Routes>
   );

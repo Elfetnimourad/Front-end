@@ -14,6 +14,7 @@ import CheckCircleIcon from "@mui/icons-material/CheckCircle";
 export const Form = () => {
   const [user, setUser] = useState("");
   const [error, setError] = useState("");
+  const [submitted, setSubmitted] = useState(true);
   const navigate = useNavigate();
   const InputRef = useRef();
   const emailValue = () => {
@@ -30,6 +31,8 @@ export const Form = () => {
     e.preventDefault();
     if (validEmail(user)) {
       navigate("/thanks");
+    } else if (user) {
+      setSubmitted(false);
     }
   };
 
@@ -43,26 +46,29 @@ export const Form = () => {
     }
   };
   return (
-    <form className="m-4" onSubmit={submitHandel}>
-      <label className="fw-bold">Email Address</label>
+    <>
+      <form className="m-4" onSubmit={submitHandel}>
+        <label className="fw-bold">Email Address</label>
 
-      {error && <div style={{ color: "red" }}>{error}</div>}
-      <input
-        onBlur={errorHandel}
-        id="inputStyle"
-        type="email"
-        placeholder="email@company.com"
-        className={`${error}` ? "errorInput" : ""}
-        value={user}
-        onChange={(e) => setUser(e.target.value)}
-        autoFocus
-        ref={InputRef}
-      />
-      <div className="m-4">
-        <button type="submit" className="btn btn-dark h-75">
-          Subscribe to monthly newsletters
-        </button>
-      </div>
-    </form>
+        {error && <div style={{ color: "red" }}>{error}</div>}
+        <input
+          onBlur={errorHandel}
+          id="inputStyle"
+          type="email"
+          placeholder="email@company.com"
+          className={`${error}` ? "errorInput" : ""}
+          value={user}
+          onChange={(e) => setUser(e.target.value)}
+          autoFocus
+          ref={InputRef}
+        />
+        <div className="m-4">
+          <button type="submit" className="btn btn-dark h-75">
+            Subscribe to monthly newsletters
+          </button>
+        </div>
+        <Thanks value={user} />
+      </form>
+    </>
   );
 };

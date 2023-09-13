@@ -7,7 +7,7 @@ import { Form } from "./Form";
 export const Thanks = ({ user }) => {
   return (
     <div className="thanks-body">
-      <div className="card here p-5">
+      <div className="card here p-5 d-none ">
         <CheckCircleIcon className="CheckCircleIconStyle" />
         <h1 className="fw-bold">Thanks for subscribing!</h1>
         <h6>
